@@ -8,16 +8,13 @@ from collections import OrderedDict
 from PySide import QtGui,QtCore,QtUiTools
 
 from paws.qt.qtapi import QPawsAPI
-from paws.ui import uitools
-from paws.ui import widgets
+from paws.qt import widgets
 from paws.core import pawstools
-from paws.core.operations import Operation as opmod
 from .. import base
 from pipeline import msg
 from xicam import config
 from xicam import threads
 from pyqtgraph import parametertree as pt
-
 
 class BatchPlugin(base.plugin):
     name = 'Batch'
@@ -26,8 +23,9 @@ class BatchPlugin(base.plugin):
 
         self.paw = QPawsAPI(QtGui.QApplication.instance())
         self.paw.set_logmethod(print)
-        # TODO: paw will soon have a better way to handle these message emissions.
-        # Implement it here when it's done.
+        # TODO (LAP): paw will soon have a better way
+        # to handle these message emissions.
+        # Implement it on the line below when it's done.
         self.paw._wf_manager.emitMessage.connect(print)
         self._wfname = 'img_process'
         self._batch_wfname = 'batch'
