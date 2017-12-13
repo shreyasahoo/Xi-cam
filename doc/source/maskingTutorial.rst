@@ -23,7 +23,7 @@ click on the third button on the center menu above the image and click on the fi
 screen; drag the polygon to the area you would like to mask. Change the size and shape of the polygon by dragging the
 squares on the corners of the polygon. Click on the second button on the center menu above the image to see the masking.
 
-.. image:: images/Box2.png
+.. image:: images/Box2.jpg
     :width: 900 px
 
 
@@ -42,7 +42,7 @@ Horizontal Cut:
 ===============
 To add a vertical cut to the image, click on the horizontal line button. Drag the edges of the box to place it in the
 interested section. The x space is helpful to analyze horizontal cuts.
-.. image:: images/horizontal.png
+.. image:: images/horizontal.jpg
     :width: 900 px
 
 
